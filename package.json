@@ -1,0 +1,23 @@
+{
+  "name": "waifu-pics",
+  "version": "1.2.1",
+  "description": "View and Download images of different anime-waifus",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "anime",
+    "waifu",
+    "anime-love",
+    "anime-characters"
+  ],
+  "author": "Sachin Acharya",
+  "license": "ISC",
+  "dependencies": {
+    "anime-images-api": "^2.0.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "request": "^2.88.2"
+  }
+}

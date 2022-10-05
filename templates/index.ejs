@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/612f542d54.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Allan&family=Anton&family=Bebas+Neue&family=Courgette&family=Imbue&family=Kaushan+Script&family=Lobster&family=Nova+Square&family=Oswald:wght@300;400&family=PT+Sans+Narrow&family=Pathway+Gothic+One&family=Poppins&family=Potta+One&family=Righteous&family=Roboto:wght@300;400&family=Squada+One&family=Teko:wght@300;400&family=Trade+Winds&family=Yanone+Kaffeesatz:wght@400;500&family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Waifu Picture Downloader | Waifu-</title>
+</head>
+<body>
+    <div class="container">
+        <form class="form-area" id="form_area">
+            <div class="search_area">
+                <input type="text" name="search_bar" class="search_bar" autocomplete="off" placeholder="Waifu name...">
+            </div>
+            <div class="filter-types">
+                <p>Choose Types</p>
+                <div>
+                    <div class="swf-filter">
+                        <input type="radio" name="filter_value" value="sfw" class="btn_radio" id="value-swf" checked hidden onclick="updateCategories('sfw')">
+                        <label for="value-swf">Normal</label>
+                    </div>
+                    <div class="nswf-filter">
+                        <input type="radio" name="filter_value" value="nsfw" id="value-nswf" class="btn_radio" hidden onclick="updateCategories('nsfw')">
+                        <label for="value-nswf">Adult (18+)</label>
+                    </div>
+                </div>
+            </div>
+            <button title="Get new Image every 5000 MS (5S)" class="active" type="button">Get Automatic</button>
+            <div class="filter-categories">
+                <input type="text" class="input-categories" name="input-categories" placeholder="Choose Category" list="category-options">
+                <datalist id="category-options">
+                </datalist>
+            </div>
+        </form>
+        <div class="sep"><h1>Image Display Area</h1></div>
+        <div class="display-area" id="lightgallery">
+
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
